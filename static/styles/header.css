@@ -1,0 +1,54 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+}
+
+.name{
+  font-size: 20px;
+  letter-spacing: 0.1em;
+}
+
+.tabs{
+  font-size: 15px;
+  letter-spacing: 0.1em;
+  font-weight: 100;
+}
+
+.header-right{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.name,.tabs{
+  cursor: pointer;
+  font-family: Futura;
+  letter-spacing: 0.1em;
+  color: white;
+  transition: opacity 0.3s;
+}
+
+.tabs:hover, .name:hover{
+  opacity: 0.5;
+}
+
+.header-bottom{
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+  margin-right: 20px;
+}
+.linkedin-logo,.github-logo,.instagram-logo{
+  width: 20px;
+  transition: opacity 0.3s;
+  margin-bottom: 10px;
+}
+
+.linkedin-logo:hover,.github-logo:hover,.instagram-logo:hover{
+  opacity: 0.5;
+}
+
+

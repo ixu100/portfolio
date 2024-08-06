@@ -1,0 +1,60 @@
+.information-about-me{
+  display: flex;
+  flex-direction: row;
+  color: white;
+  flex-wrap: wrap;
+  
+}
+
+.introduction,.positions{
+  margin-left: 40px;
+  margin-right: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+
+}
+
+.information-title,.resume-information{
+  font-family: Futura;
+  margin-bottom: 20px;
+  
+}
+.intro,.free-time{
+  font-family: "Yu Gothic";
+  max-width: 45vw;
+  line-height: 1.6;
+  font-size: 15px;
+  margin-top: 10px;
+}
+.experience{
+  margin-top: 20px;
+}
+.experience-commentary{
+  font-family: "Yu Gothic";
+  line-height: 1.6;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+.timeline{
+  font-family: "Yu Gothic";
+  line-height: 1.6;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+
+.resume{
+  margin: 0 30px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 20px;
+}
+
+.resume-pdf{
+  flex-grow: 1;
+  height: 100vh;
+}

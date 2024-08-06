@@ -1,0 +1,103 @@
+.proj-container{
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.p-title{
+  text-align: center;
+  color: white;
+  font-family: Futura;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.proj{
+  width: 30rem;
+  height: 18rem;
+}
+
+.proj-img:hover{
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.proj-img{
+  transition: opacity 0.5s;
+  width: 30rem;
+  height: 18rem; 
+}
+.blur{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.5);
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+.proj-sidebar{
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  overflow-y: scroll;
+  background-color: #CBCBCB;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 40vw;
+  height: 100%;
+  z-index: 2;
+}
+.back-arrow{
+  font-family: Futura;
+  text-align: right;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+.back-arrow:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.side-title{
+  text-align: center;
+  font-family: Futura;
+  font-size: 2rem;
+  margin-left: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.side-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  border-radius: 10px;
+}
+.side-subtitle{
+  font-family: Futura;
+  font-size: 1rem;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.side-subtext{
+  font-family: "Labrada";
+  max-width: 500px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.skills-subset{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.skills{
+  font-family: "Labrada";
+}

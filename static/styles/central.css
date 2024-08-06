@@ -1,0 +1,32 @@
+
+
+.central{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.central-information{
+  display: flex;
+  flex-direction: column;
+  font-family: Futura;
+  color: white;
+  gap: 10px;
+}
+
+.central-name{
+  font-weight: normal;
+  font-size: 6rem;
+  letter-spacing: 0.1em;
+}
+
+.central-description{
+  font-size: 15px;
+}
+
+.myself{
+  border-radius: 20px;
+  width: 520px;
+  height: 340px;
+}
