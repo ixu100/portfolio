@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% block content %}
+<div onclick="dip()" id="blur"class="blur"></div>
+<main>
+  <div>
+    <h2 class="p-title">My Projects</h2>
+  </div>
+  <div class="proj-container">
+    <div class="proj">
+      <img onclick="showProj('proj1')" class="proj-img" src = "{{url_for('static',filename='projects/proj-1.png')}}">
+      <div id="proj1" class="proj-sidebar">
+        <p onclick="dip('proj1')" class="back-arrow"> Back to Projects</p>
+        <p class="side-title">Isaac Xu Portfolio</p>
+        <img class="side-img" src="{{url_for('static',filename='projects/proj-1.png')}}">
+        <p class="side-subtitle">About</p>
+        <p class="side-subtext">
+          This is my portfolio that I created to document my projects
+          and also to learn web-development and front-end languages such as 
+          HTML/CSS and Javascript
+        </p>
+        <p class="side-subtitle">Technologies</p>
+        <div class="skills-subset">
+          <p class="skills">HTML/CSS</p>
+          <p class="skills">Javascript</p>
+          <p class="skills">Python</p>
+          <p class="skills">Flask</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="proj">
+      <img onclick="showProj('proj2')" class="proj-img" src = "{{url_for('static',filename='projects/proj-2.png')}}">
+      <div id="proj2" class="proj-sidebar">
+      </div>
+    </div> -->
+
+  </div>
+</main>
+
+{% endblock content %}
+

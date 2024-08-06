@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block content %}
+<main class="central">
+  <div class="central-information">
+    <p class="central-name">Isaac Xu</p>
+    <p class="central-description">Aspiring Software Engineer / Data Scientist</p>
+  </div>
+  <div class="central-image">
+    <img class="myself" src="{{url_for('static',filename='me/m-photo.jpg')}}">
+  </div>
+</main>
+{% endblock content %}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/futura-std-4" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='styles/header.css')}}">
+    <link rel="stylesheet" type="text/css" href= "{{url_for('static',filename='styles/general.css')}}">
+    <link rel="stylesheet" type="text/css" href= "{{url_for('static',filename='styles/projects.css')}}">
+    <link rel="stylesheet" type="text/css" href= "{{url_for('static',filename='styles/information.css')}}">
+    <link rel="stylesheet" type="text/css" href= "{{url_for('static',filename='styles/central.css')}}">
+    <link rel="stylesheet" type="text/css" href= "{{url_for('static',filename='styles/contact.css')}}">
+    <script src="{{url_for('static',filename='javascript/project.js')}}"></script>
+    <script src="{{url_for('static',filename='javascript/index.js')}}"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init('K6Kgm8fVvcKg4Xpyb');
+      })();
+    </script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-left">
+        <a class="name" href="./" >Isaac Xu</a>
+      </div>
+      <div class="header-right">
+        <a class = "tabs" href="/about">About Me</a>
+        <a class = "tabs" href="/projects">Projects</a>
+        <a class = "tabs" href="/contact">Contact</a>
+      </div>
+    </header>
+    {% block content %} 
+    {% endblock %}
+    <footer class="header-bottom">
+      <a class="linkedin" href="https://www.linkedin.com/in/isaac-xu-88a6aa279/" target="_blank">
+        <img class="linkedin-logo" src = "{{url_for('static',filename='logo/linkedin-logo.png')}}">
+      </a>
+      <a class="instagram" href = "https://www.instagram.com/isaaacxu/" target = "_blank">
+        <img class="instagram-logo" src="{{url_for('static',filename='logo/instagram-logo.png')}}">
+      </a>
+      <a class="github" href="https://github.com/ixu100" target="_blank">
+        <img class="github-logo" src="{{url_for('static',filename='logo/github-logo.png')}}">
+      </a>
+    </footer>
+
+  </body>
+</html>
