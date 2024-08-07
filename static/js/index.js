@@ -1,31 +1,46 @@
+function isValidEmail(email) {
+  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return re.test(String(email).toLowerCase());
+}
+
 function sendMail(){
+  var name = document.getElementById("name").value.trim();
+  var email = document.getElementById("email").value.trim();
+  var subject = document.getElementById("subject").value.trim();
+  var message = document.getElementById("message").value.trim();
+
+  if (!name || !email || !subject || !message) {
+    alert("Please fill out all fields.");
+    return;
+  }
+  if (!isValidEmail(email)){
+    alert("Please enter a valid email address.");
+    return;
+  }
+
   var params = {
-    name: document.getElementById("name").value ,
-    email: document.getElementById('email').value,
-    subject: document.getElementById('subject').value,
-    message: document.getElementById('message').value,
+    name: name,
+    email: email,
+    subject: subject,
+    message: message,
   };
 
   const serviceID = "service_cgxvntb";
   const templateID = "template_mthcdma";
 
-  if (params.name && params.email && params.subject && params.message){
-    emailjs.send(serviceID,templateID,params)
-    .then((res) =>{
-        document.getElementById("name").value = "";
-        document.getElementById("email").value = "";
-        document.getElementById("subject").value = "";
-        document.getElementById("message").value = "";
-        console.log(res);
-        alert("Your message sent successfully");
-      })
-      .catch((error) => {
-        console.log("Failed",error);
-        alert("Failed",error);
-      })
-  } else{
+  emailjs.send(serviceID, templateID, params)
+  .then((response) =>{
+    console.log("Email sent successfully", response);
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("subject").value = "";
+    document.getElementById("message").value = "";
+    alert("Your message has been sent successfully!");
+  })
+  .catch((error) => {
     console.log("Email failed to send", error);
+    alert("Failed to send your message. Please try again later.");
+  });
+    
   }
   
-}
-

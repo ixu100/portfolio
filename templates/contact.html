@@ -6,14 +6,14 @@
   </div>
   <form class="contact-information">
     <p class="contact-inf">Name</p>
-    <input class="contact-name" placeholder="Name" id="name" required>
+    <input class="contact-name" autocomplete="on" type="text" placeholder="Name" id="name" required>
     <p class="contact-inf">Email</p>
-    <input class="contact-email" type="email" placeholder="Email" id="email" required>
+    <input class="contact-email" autocomplete = "on" type="email" placeholder="Email" id="email" required>
     <p class="contact-inf">Subject</p>
-    <input class="contact-subject" placeholder="Subject" id="subject" required>
+    <input class="contact-subject" placeholder="Subject" type="text" id="subject" required>
     <p class="contact-inf">Message</p>
     <textarea class="form" rows="10" placeholder="Message" id="message" required></textarea>
-    <button type="submit" class="submit-button" onclick="sendMail()">Submit</button>
+    <button type="button" class="submit-button" onclick="sendMail()">Submit</button>
   </form>
 
 </main>
