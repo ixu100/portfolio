@@ -11,9 +11,7 @@
   flex-direction: column;
   margin-top: 3rem;
   height: 70vh;
-  align-items: flex-start;
-  margin-left: 9rem;;
-  margin-right: 7rem;
+  align-items: center;
 }
 .contact-inf{
   font-family: Futura;
