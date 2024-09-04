@@ -14,8 +14,7 @@
   align-items: center;
 }
 .contact-inf{
-  display: flex;
-  align-items: flex-start;
+  text-align: left;
   font-family: Futura;
   line-height: 1.6;
   color: white;
