@@ -17,6 +17,9 @@
   border-width: 2px;
 }
 .contact-inf{
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
   text-align: left;
   font-family: Futura;
   line-height: 1.6;
