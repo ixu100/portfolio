@@ -20,7 +20,8 @@
   border-color: white;
   border-style: solid;
   border-width: 2px;
-  display: block;
+  width: 100vw;
+  display: inline-block;
   text-align: left;
   font-family: Futura;
   line-height: 1.6;
