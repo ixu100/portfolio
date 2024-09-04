@@ -12,10 +12,9 @@
   margin-top: 3rem;
   height: 70vh;
   align-items: center;
+  justify-content: start;
 }
 .contact-inf{
-  display: flex;
-  justify-content: start;
   font-family: Futura;
   line-height: 1.6;
   color: white;
