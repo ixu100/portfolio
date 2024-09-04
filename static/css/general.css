@@ -5,6 +5,10 @@
 main{
   flex-grow: 1;
 }
+p {
+  margin: 0 auto;
+  text-align: center;
+}
 body{
   position: relative;
   display: flex;
