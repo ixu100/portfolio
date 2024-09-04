@@ -10,6 +10,7 @@
 .central-information{
   display: flex;
   flex-direction: column;
+  align-items: center;
   font-family: Futura;
   color: white;
   gap: 10px;
