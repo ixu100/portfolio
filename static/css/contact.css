@@ -11,10 +11,11 @@
   flex-direction: column;
   margin-top: 3rem;
   height: 70vh;
-  align-items: flex-start;
-  justify-content: center;
+  align-items: center;
 }
 .contact-inf{
+  display: flex;
+  justify-content: start;
   font-family: Futura;
   line-height: 1.6;
   color: white;
