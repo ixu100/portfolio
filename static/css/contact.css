@@ -17,12 +17,7 @@
   border-width: 2px;
 }
 .contact-inf{
-  border-color: white;
-  border-style: solid;
-  border-width: 2px;
-  width: 100vw;
-  display: inline-block;
-  text-align: left;
+  width: 80%;
   font-family: Futura;
   line-height: 1.6;
   color: white;
